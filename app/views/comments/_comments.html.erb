@@ -10,8 +10,6 @@
       <div class="comment-submit">
         <% if current_user %>
           <%= f.submit "评论", class: "btn" %><%= f.submit "匿名评论", class: "btn comment-anonymous", style: "margin-left: -1px;" %>
-        <% else %>
-          <%= f.submit "匿名评论", class: "btn" %>
         <% end -%>
       </div>
   <% end -%>
@@ -103,8 +101,6 @@
         <div class="comment-submit">
           <% if current_user %>
             <%= f.submit "评论", class: "btn" %><%= f.submit "匿名评论", class: "btn comment-anonymous", style: "margin-left: -1px;" %>
-          <% else %>
-            <%= f.submit "匿名评论", class: "btn" %>
           <% end -%>
         </div>
         <% end -%>
